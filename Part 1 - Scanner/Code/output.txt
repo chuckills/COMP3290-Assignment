@@ -1,0 +1,63 @@
+TSTRG hello world TIDEN world9      TILIT 9     TFLIT 999.999     
+TFLIT 888.888     TDOT  TILIT 888   TILIT 123   TIDEN abc   TILIT 123   
+TDOT  TIDEN abc   TILIT 123   
+TUNDF #     
+Lexical Error (8, 5): invalid character sequence : #
+TILIT 456   TILIT 789   TDOT  
+TUNDF #     
+Lexical Error (9, 6): invalid character sequence : #
+TILIT 987   TIDEN abc   
+TUNDF @     
+Lexical Error (10, 5): invalid character sequence : @
+TIDEN def   TSEMI 
+TUNDF "Line 11 finished with a comment    
+Lexical Error (12, 2): unclosed string literal : "Line 11 finished with a comment
+TLBRK TRBRK TCOMA TLPAR TRPAR TEQUL TPLUS TPLUS TILIT 1     TMINS 
+TSTAR TDIVD TPERC TCART TLESS TGRTR 
+TUNDF "hello      
+Lexical Error (28, 2): unclosed string literal : "hello
+TIDEN hello 
+TUNDF "world hello world      
+Lexical Error (29, 7): unclosed string literal : "world hello world
+TCOLN TDOT  TLESS TLEQL TLEQL TGEQL TNEQL TEQEQ TPLEQ TMNEQ TSTEQ 
+TDVEQ TPERC TEQUL 
+TUNDF "Line 42 was a comment  
+Lexical Error (43, 2): unclosed string literal : "Line 42 was a comment
+TDIVD TMINS TIDEN helloAgain  TCD18 TCONS TTYPS TIS   TARRS TMAIN 
+TBEGN TEND  TARAY TOF   TFUNC TVOID TCNST TINTG TREAL TBOOL TFOR  
+TREPT TUNTL TIFTH TELSE TINPT TPRIN TPRLN TRETN TNOT  TAND  TOR   
+TXOR  TTRUE TFALS 
+TUNDF !!!   
+Lexical Error (76, 7): invalid character sequence : !!!
+TLESS 
+TUNDF #!#   
+Lexical Error (77, 5): invalid character sequence : #!#
+TUNDF @@@@  
+Lexical Error (78, 5): invalid character sequence : @@@@
+TLESS 
+TUNDF !!!   
+Lexical Error (78, 12): invalid character sequence : !!!
+TUNDF @#    
+Lexical Error (79, 3): invalid character sequence : @#
+TUNDF "$%^&*()/--the last comment   
+Lexical Error (79, 4): unclosed string literal : "$%^&*()/--the last comment
+TEOF  
+
+Error List:
+===========
+Lexical Error (8, 5): invalid character sequence : #
+Lexical Error (9, 6): invalid character sequence : #
+Lexical Error (10, 5): invalid character sequence : @
+Lexical Error (12, 2): unclosed string literal : "Line 11 finished with a comment
+Lexical Error (28, 2): unclosed string literal : "hello
+Lexical Error (29, 7): unclosed string literal : "world hello world
+Lexical Error (43, 2): unclosed string literal : "Line 42 was a comment
+Lexical Error (76, 7): invalid character sequence : !!!
+Lexical Error (77, 5): invalid character sequence : #!#
+Lexical Error (78, 5): invalid character sequence : @@@@
+Lexical Error (78, 12): invalid character sequence : !!!
+Lexical Error (79, 3): invalid character sequence : @#
+Lexical Error (79, 4): unclosed string literal : "$%^&*()/--the last comment
+=================================================================
+
+Process finished with exit code 0
