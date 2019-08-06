@@ -1,0 +1,11 @@
+/-- Greg Choice c9311718
+
+/-- At least one that fails syntactically (but succeeds lexically)
+
+CD18 Part2a 
+main
+	j : integer 
+begin
+	j = 10 / -2; /-- Should be j = 10 / (0-2);
+	print j;
+end CD18 Part2a

@@ -1,0 +1,72 @@
+/-- Greg Choice c9311718
+
+/-- Several that you expect to run successfully when later compiled by your part 3, 4 & 5
+
+/-- Write a program in CD18 that will compute the area of a polygon from a
+/-- set of (x, y) Cartesian points
+
+CD18 Part2e
+
+constants
+	SIZE = 20
+
+types
+	Point is
+		x : integer, y : integer
+	end
+	
+	Polygon is array[SIZE] of Point
+
+arrays
+	myPolygon : Polygon
+
+/-- Function to input the number of points and the points themselves
+func getPoints() : integer
+
+	i : integer, n : integer
+	
+	begin
+	
+		input n;
+		for(i = 0; i < n)
+			input myPolygon[i].x;
+			input myPolygon[i].y;
+			i += 1;
+		end
+		return n;
+		
+	end
+
+/-- Function to compute the area of the polygon
+func computeArea(n : integer) : real
+
+		i : integer, sigma : real
+
+	begin
+
+		sigma = 0.0;
+		for (i = 0; i <= n-2;)
+			sigma += (myPolygon[i+1].x + myPolygon[i].x) * (myPolygon[i+1].y - myPolygon[i].y);
+			i += 1;
+		end
+		
+		if (sigma < 0)
+			return (0.0-0.5) * sigma;
+		else
+			return 0.5 * sigma;
+		end
+		
+	end
+
+main
+	area : real
+
+begin
+
+	area = computeArea(getPoints());
+	
+	print "The area of the polygon is ";
+	print area;
+	printline " square units.";
+	
+end CD18 Part2e
