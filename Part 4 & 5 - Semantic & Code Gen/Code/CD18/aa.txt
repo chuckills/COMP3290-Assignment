@@ -1,0 +1,12 @@
+/-- Simple Program
+/-- This SHOULD pass!
+CD18 a
+
+main
+    a : integer
+begin
+    printline "Hello world", "Hello world2";
+	printline "Hello", "World";
+end 
+
+CD18 a
