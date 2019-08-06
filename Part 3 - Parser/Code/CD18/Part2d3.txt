@@ -1,0 +1,65 @@
+/-- Greg Choice c9311718
+
+/-- Several that you expect to run successfully when later compiled by your part 3, 4 & 5
+
+/-- 3. One that has function(s)/procedure(s) using all three methods of 
+/--    parameter passing that are allowed in CD18
+
+/-- Program takes input for a week's worth of temperatures and calculates an average
+/-- as in Part2d2 but uses functions to perform the operations
+
+CD18 Part2d3
+
+constants
+	DAYS = 7
+
+types
+	temperature is
+		value : real
+	end	
+	
+	temperatures is array[DAYS] of temperature	
+
+/-- Function to input temperatures into the array	
+func avgTemp() : real
+	i : integer, total : real, temps : temperatures
+	
+	begin
+		for(i = 0; i < DAYS)
+			input temps[i].value;
+			i += 1;
+		end
+	
+		total = calcTotal(temps);
+	
+		return total / DAYS;	
+	end
+
+/-- Function to calculate the total of temperatures	
+func calcTotal(const temps : temperatures) : real
+	
+	i : integer, total : real
+	
+	begin
+		total = 0.0;
+		for(i = 0;  i < DAYS)
+			total += temps[i].value
+		end
+		return total;	
+	end
+	
+main
+	i : integer, averageTemp : real
+
+begin
+		
+	print "Enter ";
+	print DAYS;
+	printline " temperatures:";
+	
+	averageTemp = avgTemp();
+	
+	print "The average temperature is ";
+	printline averageTemp;
+	
+end CD18 Part2d3

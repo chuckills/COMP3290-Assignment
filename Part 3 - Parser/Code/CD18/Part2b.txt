@@ -1,0 +1,11 @@
+/-- Greg Choice c9311718
+
+/-- At least one that fails semantically (but succeeds lexically and syntactically)
+
+CD18 Part2b 
+main
+	j : integer 
+begin
+	j = 10 / (0-2) ;
+	print j ;
+end CD18 /-- There is no final identifier

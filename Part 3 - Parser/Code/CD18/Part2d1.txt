@@ -1,0 +1,30 @@
+/-- Greg Choice c9311718
+
+/-- Several that you expect to run successfully when later compiled by your part 3, 4 & 5
+/-- 1. One that just has a main program and simple variables
+
+/-- Program subtracts an integer from a float and decides which sign the result is
+
+CD18 Part2d1
+	
+main
+	myInt : integer, myAnswer : real, sign : boolean
+
+begin
+	
+	print "Enter an integer value: ";
+	input myInt;
+	print "Enter a float value: ";
+	input myAnswer;
+	
+	sign = false;
+	
+	myAnswer -= myInt;
+	
+	if(myAnswer < 0)
+		printline "The answer is negative.";
+	else
+		printline "The answer is positive.";
+	end
+	
+end CD18 Part2d1

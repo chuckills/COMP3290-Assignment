@@ -1,0 +1,53 @@
+/-- Greg Choice c9311718
+
+/-- Several that you expect to run successfully when later compiled by your part 3, 4 & 5
+/-- 2. One that has arrays
+
+/-- Program takes input for a week's worth of temperatures and calculates an average
+
+CD18 Part2d2
+
+constants
+	DAYS = 7
+
+types
+	temperature is
+		value : real
+	end	
+	
+	temperatures is array[DAYS] of temperature
+	
+arrays
+	myTemps : temperatures
+	
+main
+	i : integer, total : real, averageTemp : real
+
+begin
+		
+	print "Enter ";
+	print DAYS;
+	printline " temperatures:";
+	
+	for(i = 0; i < DAYS)
+		myTemps[i].value = 0.0;
+		i += 1;
+	end	
+	
+	for(i = 0; i < DAYS)
+		input myTemps[i].value;
+		i += 1;
+	end
+	
+	total = 0.0;
+	
+	for(i = 0;  i < DAYS)
+		total += myTemps[i].value
+	end
+	
+	averageTemp = total / DAYS;
+	
+	print "The average temperature for the week is ";
+	printline averageTemp;
+	
+end CD18 Part2d2

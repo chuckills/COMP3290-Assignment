@@ -1,0 +1,86 @@
+!!=
+			"hello world"
+world9
+9
+999.999
+888.888.888
+123abc
+123.abc
+123#456
+789.#987
+abc@def
+; /-- hi there
+"Line 12 finished with a comment
+[
+]
+,
+(
+)
+=
++
++1
+-
+*
+/
+%
+^
+<
+>
+"hello
+hello"world hello world
+:
+.
+<<=
+<=
+>=
+!=
+==
++=
+-=
+*=
+/=
+%=
+/-- wtf?
+"Line 43 was a comment
+/-helloAgain
+CD18
+constants
+types
+is
+arrays
+main
+begin
+end
+array
+of
+func
+void
+const
+integer
+real
+boolean
+for
+repeat
+until
+if
+else
+input
+print
+printline
+return
+not
+and
+or
+xor
+true
+false
+!!!<
+#!#
+@@@@<!!!
+@#"$%^&*()/--the last comment
+1234.567@978654321
+1234.567@9786.543
+1234.567@abcdef
+1234.567@@@@abcdef
+123.4@5.789
+!!=

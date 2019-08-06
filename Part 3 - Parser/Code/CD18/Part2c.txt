@@ -1,0 +1,10 @@
+/-- Greg Choice c9311718
+
+/-- What you consider to be the simplest possible working program in CD18
+
+CD18 Part2c
+main
+	i : boolean
+begin
+	print "Hello world!";
+end CD18 Part2c
